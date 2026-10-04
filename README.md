@@ -1,27 +1,11 @@
-# Hawthorne Legal V3
+# Hawthorne Legal V4
 
-Fictional portfolio concept.
+Portfolio concept for a fictional Fort Collins law firm.
 
-## Upload to GitHub
-Upload **everything in this folder at the repository root**. V3 intentionally keeps `team.jpg` at the root so GitHub's browser uploader cannot flatten an image folder and break the image path.
+## V4 changes
+- Reframed the desktop hero team image so all three attorneys sit more naturally in the visible crop.
+- Rebuilt the footer wordmark to match the header branding and removed the stray legacy H mark.
+- Mobile behavior remains unchanged.
 
-Expected root files include:
-- index.html
-- about.html
-- business-law.html
-- estate-planning.html
-- styles.css
-- script.js
-- team.jpg
-- robots.txt
-- sitemap.xml
-- _headers
-
-## Cloudflare Pages
-Use the existing `hawthorne-legal-demo` project. GitHub commits to `main` should deploy automatically.
-
-If reconnecting from scratch:
-- Framework preset: None
-- Build command: leave blank
-- Build output directory: .
-- Production branch: main
+## Deploy
+Upload every file in this folder to the root of the existing `hawthorne-legal-demo` GitHub repository, replacing files with the same names. Commit to `main`. Cloudflare Pages should deploy automatically.
