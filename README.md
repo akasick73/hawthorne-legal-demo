@@ -1,11 +1,16 @@
-# Hawthorne Legal V4
+# Hawthorne Legal — Brand Final
 
-Portfolio concept for a fictional Fort Collins law firm.
-
-## V4 changes
-- Reframed the desktop hero team image so all three attorneys sit more naturally in the visible crop.
-- Rebuilt the footer wordmark to match the header branding and removed the stray legacy H mark.
-- Mobile behavior remains unchanged.
+Final portfolio build matching the approved navy/gold concept.
 
 ## Deploy
-Upload every file in this folder to the root of the existing `hawthorne-legal-demo` GitHub repository, replacing files with the same names. Commit to `main`. Cloudflare Pages should deploy automatically.
+Upload **everything inside this folder** to the root of the existing GitHub repository `hawthorne-legal-demo`, replacing existing files, then commit to `main`.
+
+Cloudflare Pages is already connected to that repository and should deploy automatically.
+
+Cloudflare settings if ever needed:
+- Framework preset: None
+- Build command: blank
+- Build output directory: .
+- Production branch: main
+
+This is a fictional portfolio concept.

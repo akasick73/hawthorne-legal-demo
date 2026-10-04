@@ -6,3 +6,59 @@ footer .brand.foot{font-family:Georgia,serif;font-size:18px;letter-spacing:.13em
 footer .brand.foot .brandword{display:flex;flex-direction:column}
 footer .brand.foot .brandword:after{width:110px}
 footer .brand.foot small{font-size:7px;letter-spacing:.42em;margin-top:4px}
+
+/* FINAL desktop hero composition: preserve the full three-person portrait instead of cropping it. */
+@media (min-width: 901px){
+  .hero{grid-template-columns:42% 58%;min-height:500px;align-items:stretch}
+  .hero-copy{padding:48px 4.2vw 44px}
+  .hero h1{font-size:clamp(48px,4.15vw,68px);max-width:650px}
+  .hero .lede{font-size:17px;margin:20px 0}
+  .hero .actions{margin:22px 0}
+  .hero .micro{padding-top:20px}
+  .hero-art{min-height:500px;background:#071b29}
+  .photo-main{
+    background-image:linear-gradient(90deg,rgba(7,27,41,.14),rgba(7,27,41,0)),url('team.jpg');
+    background-position:center center;
+    background-size:100% auto;
+    background-repeat:no-repeat;
+  }
+}
+
+/* Final footer wordmark: compact and visually balanced. */
+footer .brand.foot{font-size:17px;min-width:190px;letter-spacing:.12em}
+footer .brand.foot .brandword:after{width:92px;margin-top:5px}
+footer .brand.foot small{font-size:7px;letter-spacing:.38em;margin-top:3px}
+
+/* BRAND FINAL: premium Hawthorne identity + compact sitewide navigation */
+.brand{gap:22px;letter-spacing:0;font-size:inherit;min-width:365px}
+.brandmark{width:58px;height:58px;position:relative;display:block;flex:0 0 58px;color:var(--gold2);font-family:Georgia,serif}
+.brandmark span:first-child{position:absolute;left:2px;top:-5px;font-size:48px;line-height:1}
+.brandmark span:last-child{position:absolute;left:27px;top:17px;font-size:38px;line-height:1}
+.brand-divider{width:1px;height:54px;background:rgba(225,191,121,.7);display:block}
+.brandword{font-family:Georgia,serif;font-size:28px;line-height:1;letter-spacing:.13em;white-space:nowrap}
+.brandword small{color:var(--gold2);font-size:10px;letter-spacing:.5em;margin-top:9px}
+.brandword:after{display:none}
+header{height:105px;padding:0 3.5vw;background:linear-gradient(90deg,#071b29,#082131)}
+nav{gap:42px}nav a{font-size:15px;font-weight:600}
+.utility{min-height:54px;padding:0 3.5vw}.utility .consult{align-self:stretch;display:flex;align-items:center;padding:0 30px}
+
+/* Interior pages now use the same cinematic split treatment as the approved concept. */
+.inner-hero.inner-photo{min-height:575px;padding:0;display:grid;grid-template-columns:43% 57%;position:relative;background:var(--navy);overflow:hidden}
+.inner-hero.inner-photo:after{content:"";grid-column:2;grid-row:1;min-height:575px;background:linear-gradient(90deg,rgba(7,27,41,.28),rgba(7,27,41,0) 28%),url('team.jpg') center center/cover no-repeat}
+.inner-hero.inner-photo>*{grid-column:1;position:relative;z-index:2;margin-left:5vw;margin-right:2vw}
+.inner-hero.inner-photo .eyebrow{align-self:end;margin-bottom:20px;padding-top:95px}
+.inner-hero.inner-photo h1{align-self:center;font-size:clamp(48px,4.15vw,70px);max-width:720px}
+.inner-hero.inner-photo p:last-of-type{align-self:start;font-family:Georgia,serif;font-size:18px;line-height:1.55;color:#d7dfe4;max-width:700px;margin-top:28px;padding-bottom:90px}
+
+/* Footer uses the same identity, scaled down instead of a second unrelated logo. */
+footer .brand.foot{min-width:310px;gap:16px}
+footer .brand.foot .brandmark{width:42px;height:42px;flex-basis:42px}
+footer .brand.foot .brandmark span:first-child{font-size:35px}
+footer .brand.foot .brandmark span:last-child{font-size:28px;left:20px;top:12px}
+footer .brand.foot .brand-divider{height:40px}
+footer .brand.foot .brandword{font-size:20px}
+footer .brand.foot .brandword small{font-size:7px;margin-top:7px}
+
+@media(max-width:1100px){nav{gap:22px}.brand{min-width:300px}.brandword{font-size:23px}.brandmark{transform:scale(.9);transform-origin:left center}}
+@media(max-width:900px){header{height:82px}.brand{min-width:0;gap:12px}.brandmark{width:43px;height:43px;flex-basis:43px;transform:scale(.78)}.brand-divider{height:40px}.brandword{font-size:19px}.brandword small{font-size:7px;margin-top:6px}.inner-hero.inner-photo{display:block;min-height:0;padding:70px 7vw;background:linear-gradient(110deg,rgba(7,27,41,.98),rgba(7,27,41,.82)),url('team.jpg') center/cover}.inner-hero.inner-photo:after{display:none}.inner-hero.inner-photo>*{margin-left:0;margin-right:0}.inner-hero.inner-photo .eyebrow{padding-top:0}.inner-hero.inner-photo p:last-of-type{padding-bottom:0}.utility{display:none}footer .brand.foot{min-width:0}}
+@media(max-width:560px){.brand-divider{display:none}.brandword{font-size:17px}.brandword small{letter-spacing:.36em}}
