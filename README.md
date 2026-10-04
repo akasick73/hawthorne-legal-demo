@@ -1,19 +1,27 @@
-# Hawthorne Legal V2 — Portfolio Concept
+# Hawthorne Legal V3
 
-Fictional boutique law-firm portfolio website. V2 uses a deep navy, near-black and muted gold visual system with a three-person fictional team and an editorial professional-services layout.
+Fictional portfolio concept.
 
-## Existing Cloudflare Pages project
-This package is designed to replace the files in the existing GitHub repository `hawthorne-legal-demo`.
+## Upload to GitHub
+Upload **everything in this folder at the repository root**. V3 intentionally keeps `team.jpg` at the root so GitHub's browser uploader cannot flatten an image folder and break the image path.
 
-1. In GitHub, upload/replace the files in the repository root and commit to `main`.
-2. Because the repository is already connected to Cloudflare Pages, the commit should automatically trigger a new deployment.
-3. No new Cloudflare project or manual deployment is required.
+Expected root files include:
+- index.html
+- about.html
+- business-law.html
+- estate-planning.html
+- styles.css
+- script.js
+- team.jpg
+- robots.txt
+- sitemap.xml
+- _headers
 
-## If connecting from scratch
+## Cloudflare Pages
+Use the existing `hawthorne-legal-demo` project. GitHub commits to `main` should deploy automatically.
+
+If reconnecting from scratch:
 - Framework preset: None
 - Build command: leave blank
-- Build output directory: `.`
-- Production branch: `main`
-
-## Notes
-Hawthorne Legal and its attorneys are fictional and created solely for portfolio demonstration. The site includes a visible portfolio-concept disclosure.
+- Build output directory: .
+- Production branch: main
